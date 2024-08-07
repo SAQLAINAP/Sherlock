@@ -9,9 +9,14 @@ Welcome to **Sherlock**! This web application is your go-to tool for predicting 
 - 📊 **Real-Time Visualization**: Displays probabilities and relevant information dynamically.
 
 ## 📸 Screenshots
-![Sherlock Main Page](screenshot1.png)
+![Sherlock Main Page](https://github.com/SAQLAINAP/Sherlock/blob/master/sherlock.png)
 
-![Sherlock Results Page](screenshot2.png)
+<div style="display: flex; justify-content: center; gap: 50px;">
+  <img src="https://github.com/SAQLAINAP/Sherlock/blob/master/sherlock-iphone.png" alt="Sherlock Mobile Page" width="200">
+  <img src="https://github.com/SAQLAINAP/Sherlock/blob/master/sherlock-ipad.png" alt="Sherlock Mid-size Page" width="300">
+</div>
+
+
 
 ## 🚀 Demo
 Check out the live demo of Sherlock [here](https://example.com).
