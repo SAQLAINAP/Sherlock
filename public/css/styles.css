@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    /* background is amoled black */
+    background-color: #000;
+}
+
+#titler {
+    /* center aligned and large, hover effect of color gradient */
+    font-size: 5vw; /* Relative font size */
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(90deg, #f12711, #f5af19);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#bodies
+{
+    /* neon and purple tint hue theme for text */
+    color: #f4f4f4;
+    text-align: center;
+    font-size: 2vw; /* Relative font size */
+}
+
+.list-item
+{
+    /* mario themed font color with soft font style */
+    color: #ff0000;
+    font-size: 2vw; /* Relative font size */
+    font-style: italic;
+}
+
+/* list style remove the bullet points */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+/* input box styling below */
+/* box with glowing borders that move around with hover effects, thin glowing borders */
+/* inout text with float in effects */
+input[type='text'] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: transparent;
+    color: #f4f4f4;
+    font-size: 1.5vw; /* Relative font size */
+    transition: all 0.3s ease;
+}
+
+input[type='text']:focus {
+    border-color: #f12711;
+    box-shadow: 0 0 5px #f12711;
+}
+
+/* button with glowing borders that move around with hover effects, thin glowing borders */
+/* button with float in effects */
+button {
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background: transparent;
+    color: #f4f4f4;
+    font-size: 1.5vw; /* Relative font size */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    border-color: #f12711;
+    box-shadow: 0 0 5px #f12711;
+}
+
+/* footer with center aligned and large, hover effect of color gradient */
+/* footer with color gradient text fill */
+footer {
+    font-size: 3vw; /* Relative font size */
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(30deg, #f12711, #f5af19);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* footer with center aligned and large, hover effect of color gradient */
+/* footer with color gradient text fill */
+
+footer :hover {
+    font-size: 3vw; /* Relative font size */
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(-30deg, #f12711, #b7f50d);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+
+/* #foots {    font-size: 3vw; /* Relative font size */
+    /* text-align: center; */
+    /* color: transparent; */
+    /* background: linear-gradient(90deg, #f12711, #f5af19); */
+    /* background-clip: text; */
+    /* text-fill-color: transparent; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+/* }    */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.error {
+    color: red;
+}
+
+.male {
+    color: blue;
+}
+
+.female {
+    color: rgb(250, 6, 46);
+}
+
+.Heading {
+    /* centre aligned and large with hover 3d effect with push back and pull ahead react like effects, color is gradient clipped */
+    font-size: 3vw; /* Relative font size */
+    text-align: center;
+    color: transparent;
+    background: linear-gradient(90deg, #f12711, #f5af19);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    /* Styles for tablets */
+    #titler {
+        font-size: 7vw; /* Adjusted relative font size for tablets */
+    }
+    
+    #foots {
+        font-size: 4vw; /* Adjusted relative font size for tablets */
+    }
+    
+    .Heading {
+        font-size: 7vw; /* Adjusted relative font size for tablets */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Styles for mobile devices */
+    #titler {
+        font-size: 10vw; /* Adjusted relative font size for mobile devices */
+    }
+    
+    #foots {
+        font-size: 6vw; /* Adjusted relative font size for mobile devices */
+    }
+    
+    .Heading {
+        font-size: 10vw; /* Adjusted relative font size for mobile devices */
+    }
+}

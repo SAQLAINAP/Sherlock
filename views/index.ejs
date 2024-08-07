@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender and Nationality Predictor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+<body id="bodies">
+    <%- include('partials/header') %>
+    <div class="container">
+        <h1 class="Heading">Predict Gender and Nationality</h1>
+        <form action="/predict" method="post">
+            <input type="text" name="name" placeholder="Enter a name" required>
+            <button type="submit">Predict</button>
+        </form>
+        <% if (name) { %>
+            <h2>Results for "<%= name %>"</h2>
+            <p><strong>Gender:</strong> <span class="<%= gender %>"><%= gender %></span></p>
+            <% if (countries && countries.length > 0) { %>
+                <h3>Possible Nationalities:</h3>
+                <ul>
+                    <% countries.forEach(country => { %>
+                        <li><span class="list-item"><%= country.country %>: <%= country.probability %>%</span></li>
+                    <% }) %>
+                </ul>
+            <% } else { %>
+                <p>No nationality data available.</p>
+            <% } %>
+        <% } %>
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gender and Nationality Predictor</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body id="bodies">
+    <%- include('partials/header') %>
+    <div class="container">
+        <h1 class="Heading">Predict Gender and Nationality</h1>
+        <form action="/predict" method="post">
+            <input type="text" name="name" placeholder="Enter a name" required>
+            <button type="submit">Predict</button>
+        </form>
+        <% if (name) { %>
+            <h2>Results for "<%= name %>"</h2>
+            <p><strong>Gender:</strong> <span class="<%= gender %>"><%= gender %></span></p>
+            <% if (countries && countries.length > 0) { %>
+                <h3>Possible Nationalities:</h3>
+                <ul>
+                    <% countries.forEach(country => { %>
+                        <li><span class="list-item"><%= country.name %>: <%= country.probability %>%</span></li>
+                    <% }) %>
+                </ul>
+            <% } else { %>
+                <p>No nationality data available.</p>
+            <% } %>
+        <% } %>
+        <% if (error) { %>
+            <p class="error"><%= error %></p>
+        <% } %>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>
