@@ -83,7 +83,7 @@ We welcome contributions to enhance Sherlock! To contribute:
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## ✉️ Contact
-For any inquiries, please reach out to [your.email@example.com](mailto:your.email@example.com).
+For any inquiries, please reach out to [302saqlainahmed@gmail.com](mailto:302saqlainahmed@gmail.com).
 
 ---
 
